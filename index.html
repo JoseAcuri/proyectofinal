@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="brand">Kerydo</a>
+        <div class="menu-btn">
+           
+            <div class="navigation">
+               <div class="navigation-items">
+                   <a href="#">Inicio</a>
+                   <a href="#">Musica</a>
+                   <a href="#">Integrantes</a>
+                   <a href="#">Conocenos</a>
+                   <a href="#">Videos</a>
+               </div>
+           </div>
+            <p><i class="fa-duotone fa-bars fa-lg"></i></p>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="content">
+            <h1><span>bienvenidos</span><br> kerydo oficial></h1>
+        </div>
+        <div class="media-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/kerydo_musica/" target="_blank"><i class="fab fa-instagram"></i></a>
+           <a href="https://open.spotify.com/artist/1yHpJwe1L4ndv0NVIv7BGn?si=T_Sr3SfOT_eTcp1X9E1JGA" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click",() => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        })
+    </script>
+
+</body>
+</html>
